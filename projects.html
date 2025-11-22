@@ -29,10 +29,10 @@
   	
     <h1><b>Projects</b></h1>
 
-    I've taken part in a lot of projects over the years, mostly relating to computer chess. Some of these follow.
+    I've taken part in a lot of projects over the years. I've listed my favorites below.
     
 
-    <h2><b>Lc0 Transformer Model Architect</b></h2>
+    <h2><b>Chess Transformers</b></h2>
 
     <div>
     <img src= "imgs/lc0maps.png" style="width: 30%; height: auto;" > 
@@ -48,7 +48,7 @@
 
     <p>
 
-    Since 2022 I have been the principal member of the Leela Chess Zero development team working on the transformer models the engine uses to guide search. 
+    Since 2022 I have been working on the transformer models used by Leela Chess Zero to guide search. 
     My main contribution was a position encoding that enables models to play as if 2.5x larger with a ~15% latency bump. 
     The latest architecture iteration can at a scale of 190 million parameters produce a policy that is competitive with grandmasters.
     Modern GPUs can evaluate this model thousands of times per second, allowing the engine to <i>effectively emulate the strength of thousands of grandmasters</i>.
@@ -58,8 +58,7 @@
     a 270-million parameter model for each legal move. Our strongest model <b> outperforms DeepMind's with 30x less computation</b>.
 
     <br>
-    Our architecture has also been the subject of a <a  href= "https://arxiv.org/abs/2406.00877" class ="w3-text-blue">NeurIPS article</a> and a <a  href= "https://arxiv.org/abs/2505.21552" class ="w3-text-blue">preprint</a>
-    analyzing its emergent capability of lookahead.
+    This architecture has also been the subject of a <a  href= "https://arxiv.org/abs/2406.00877" class ="w3-text-blue">NeurIPS article</a> and <a  href= "https://arxiv.org/abs/2508.21380" class ="w3-text-blue">two</a> <a  href= "https://arxiv.org/abs/2505.21552" class ="w3-text-blue">preprints</a>.
     One of the most interesting discoveries was an attention head which transmits information from the "to" square of the player's predicted follow-up move to the "to" square of the player's next move.
     
     <br>
@@ -80,13 +79,13 @@
     
     See <a  href= "https://lczero.org/blog/2024/02/transformer-progress/" class ="w3-text-blue">
         my blog post</a> and <a  href= "https://arxiv.org/abs/2409.12272" class ="w3-text-blue">
-        our preprint</a>.
+        our preprint</a>. We have a newer submission under review.
     
 
 
     </p>
 
-    <h2><b>Stockfish Developer</b></h2>
+    <h2><b>Stockfish Development</b></h2>
 
     <img src= "imgs/sflogo.png" style="width: 30%; height: auto;" > 
 
@@ -95,8 +94,8 @@
     <p>
 
     Since 2024 I have been involved in the development of Stockfish, which is widely considered the strongest chess engine in existence.
-    As of July 2025, I have <a  href= "https://github.com/official-stockfish/Stockfish/commits?author=daniel-monroe" class ="w3-text-blue">
-    commited to the official Stockfish repository 40 times</a>.
+    I have <a  href= "https://github.com/official-stockfish/Stockfish/commits?author=daniel-monroe" class ="w3-text-blue">
+    commited to the official Stockfish repository 60 times</a>.
     Some of my favorite improvements, each of which gained Elo, follow:
     </p>
 
@@ -133,7 +132,7 @@
     </ol>
 
 
-    <h2><b>Vdwnumbers.org Distributed Computing Project Lead</b></h2>
+    <h2><b>Vdwnumbers.org Distributed Computing Project</b></h2>
 
     <img src= "imgs/computerfarm.png" style="width: 30%; height: auto;"> 
 
@@ -158,15 +157,16 @@
     This allowed pushing the upper limit of the primes checked from a billion to 4 billion.
     </p>
 
-    <h2><b>Chess Engine Development Youtuber</b></h2>
+    <h2><b>Chess Engine Youtube Channel</b></h2>
 
     <img src= "imgs/youtube.png" style="width: 30%; height: auto;">
 
     <p>
 
     I recently noticed that there was a lot of interest in projects like Stockfish and Lc0, with videos about games between these engines garnering hundreds of thousands of views.
-    However, there are plenty of misconceptions about how these engines work (I've even found some misconceptions in papers from DeepMind).
-    I make videos about the development of these engines, with a focus on my work. The channel has 2.7 thousand subscribers and a hundred thousand views. 
+    However, there are plenty of misconceptions about how these engines work.
+  I make videos about the development of these engines, with a focus on my work. The channel has ~4 thousand subscribers and over a hundred thousand views. 
+  These videos have led several new contributors to Stockfish.
 
     </p>
 
