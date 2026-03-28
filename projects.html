@@ -103,7 +103,7 @@
     <ol>
     <li>I implemented an algorithm in cupy to increase the "block sparsity" of Stockfish's neural network.
         The idea was to iteratively calculate the change in sparsity from swaps of neurons as a matrix multiplication between 0-1 matrices,
-        which can be done rapidly on Turing and later Cuda devices. This was turned into a command-line utility by another contributor.
+        which can be done rapidly on Nvidia's Tensor Cores. This was turned into a command-line utility by another contributor.
         The speedup varied from 0.9% to 2.5% depending on the system.
     </li>
     <li> I had a series of three Elo gainers in the "prior countermove bonus",
