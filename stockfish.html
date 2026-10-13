@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>Daniel Monroe - Stockfish Contributions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a class="w3-bar-item "> Daniel Monroe</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right">
+      <a href= "index.html" class="w3-bar-item w3-button">About</a>
+      <a href="education.html" class="w3-bar-item w3-button">Education</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+    </div>
+  </div>
+    </div>
+
+
+
+
+<!-- Page content -->
+
+
+  <div style="width:100%; padding-left: 5%; padding-right: 5%; padding-top: max(64px, 5%); padding-bottom: 1%; display: inline-block;" id="stockfish" >
+
+    <h1><b>Stockfish Contributions</b></h1>
+
+    <img src= "imgs/sflogo.png" style="width: 20%; min-width: 150px; height: auto;" >
+
+    <p>
+    Stockfish is widely considered the strongest chess engine in existence. Every change to the engine must pass
+    sequential probability ratio tests (SPRT) on <a href="https://tests.stockfishchess.org" class="w3-text-blue">Fishtest</a>,
+    a distributed testing framework that plays tens of thousands of games against the current master before a patch is accepted.
+    Below are my merged contributions.
+    </p>
+
+    <div class="stat-row">
+      <div class="stat"><span class="stat-num">12</span><span class="stat-label">Elo-gaining patches</span></div>
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Elo gainers from my ideas</span></div>
+      <div class="stat"><span class="stat-num">1</span><span class="stat-label">NNUE speedup</span></div>
+      <div class="stat"><span class="stat-num">52</span><span class="stat-label">Simplifications</span></div>
+    </div>
+
+    <h2><b>Elo-gaining patches</b></h2>
+    <ol>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/5297ba0a1a1aa0a15332e0d64ce6b32952342cac" class="w3-text-blue">Move hindsight reductions above cutoffs</a> (2025-11-22)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/d9fd516547849bd5ca2a05c491aadc66fc750a39" class="w3-text-blue">Post-NNUEv10 tune</a> (2025-11-22)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/7ac8e6221979f14395bb63566e6ca43d803e2acb" class="w3-text-blue">Refine constant in correction history update</a> (2025-11-03)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/6e9b5af0f002ff1175998631e07a1c92735cae62" class="w3-text-blue">Check evaluation after ttMove before doing a tt cut</a> (2025-05-18)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/88a524c55244b3827747c0cb7c8de490b6119d23" class="w3-text-blue">Tweak futility formula</a> (2025-04-20)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/d54240c50af51b1f3a96b81514ec60286ae1056b" class="w3-text-blue">Decrease lmr depth if static eval decreases a lot</a> (2025-02-12)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/a944f082256efcb4d7ce181a472f9d674941f949" class="w3-text-blue">Retroactive reduction decrease if eval improves</a> (2025-01-16)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/f00d91f8ac72de8d201f8b50968bb66b1235dc9a" class="w3-text-blue">Refine probcut</a> (2025-01-12)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/1611b9c940f784619d6cbf01ff8b1b3ab28405a4" class="w3-text-blue">Corrplexity for futility pruning</a> (2025-01-02)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/70bb317afe870c8bc1979ef955f120e4d81f504e" class="w3-text-blue">Bonus for a prior capture that causes a fail low</a> (2024-11-22)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/e74452ae44df35aeda21e81bb2eec883a7a45c38" class="w3-text-blue">Reduce on ttcaptures if not capture</a> (2024-09-01)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/91ec31dac430e1d587f8239f2377ffb796008f8a" class="w3-text-blue">Grade countermove bonus for low statscores</a> (2024-06-29)</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/ef94f77f8c827a2395f1c40f53311a3b1f20bc5b" class="w3-text-blue">Permute NNUE feature-transformer weights to increase sparsity</a> (2023-06-23)</li>
+
+    </ol>
+
+    <h2><b>Elo-gaining patches based on my ideas</b></h2>
+    <ul>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/267fd8a3d5a19939e4026edabbe59db4f1966a10" class="w3-text-blue">Tweak History Bonus</a> (2025-04-27), implemented by FauziAkram</li>
+      <li><a href="https://github.com/official-stockfish/Stockfish/commit/c14297a483f7905d61e6f22068d33b199916257a" class="w3-text-blue">Tune Fail Low Bonus</a> (2024-05-27), implemented by Shawn Xu</li>
+    </ul>
+
+    <h2><b>Simplifications</b></h2>
+    <p>
+    Plus 52 simplifications passing non-regression testing, removing code while keeping playing strength.
+    <a href="https://github.com/official-stockfish/Stockfish/commits?author=daniel-monroe" class="w3-text-blue">See all commits</a>.
+    </p>
+
+  </div>
+
+</body>
+</html>
