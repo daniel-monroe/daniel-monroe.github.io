@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="240" rx="10" fill="#0d1117"/>
+  <text x="160" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#8b949e">Token normalization before n-gram hashing</text>
+
+  <!-- raw n-grams -->
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#c9d1d9">
+    <rect x="16" y="48" width="104" height="26" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="68" y="65" text-anchor="middle">"The Cat,"</text>
+    <rect x="16" y="86" width="104" height="26" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="68" y="103" text-anchor="middle">" the cat"</text>
+    <rect x="16" y="124" width="104" height="26" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="68" y="141" text-anchor="middle">"THE CAT"</text>
+  </g>
+
+  <!-- arrows to normalized form -->
+  <g stroke="#58a6ff" stroke-width="1.5" fill="none">
+    <path d="M122 61 C 140 61, 140 99, 156 99"/>
+    <path d="M122 99 L 156 99"/>
+    <path d="M122 137 C 140 137, 140 99, 156 99"/>
+  </g>
+  <path d="M156 95 L 162 99 L 156 103 Z" fill="#58a6ff"/>
+
+  <rect x="164" y="86" width="72" height="26" rx="6" fill="#58a6ff"/>
+  <text x="200" y="103" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#0d1117">thecat</text>
+
+  <path d="M238 99 L 256 99" stroke="#58a6ff" stroke-width="1.5"/>
+  <path d="M256 95 L 262 99 L 256 103 Z" fill="#58a6ff"/>
+
+  <!-- embedding table -->
+  <g>
+    <rect x="266" y="48" width="38" height="16" fill="#161b22" stroke="#30363d"/>
+    <rect x="266" y="64" width="38" height="16" fill="#161b22" stroke="#30363d"/>
+    <rect x="266" y="80" width="38" height="16" fill="#161b22" stroke="#30363d"/>
+    <rect x="266" y="96" width="38" height="16" fill="#3fb950" stroke="#3fb950"/>
+    <rect x="266" y="112" width="38" height="16" fill="#161b22" stroke="#30363d"/>
+    <rect x="266" y="128" width="38" height="16" fill="#161b22" stroke="#30363d"/>
+  </g>
+  <text x="285" y="160" text-anchor="middle" font-size="10" fill="#8b949e">1 slot</text>
+
+  <!-- result -->
+  <text x="160" y="196" text-anchor="middle" font-size="12" fill="#c9d1d9">Similar n-grams share an embedding;</text>
+  <text x="160" y="214" text-anchor="middle" font-size="12" fill="#c9d1d9">unrelated ones collide less.</text>
+</svg>
