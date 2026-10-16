@@ -24,7 +24,7 @@
     <div class="nav-right">
       <div class="nav-links">
         <a href="index.html">About</a>
-        <a href="papers.html">Papers</a>
+        <a href="research.html">Research</a>
         <a href="projects.html" class="active">Projects</a>
         <a href="education.html">Education</a>
       </div>
@@ -44,14 +44,14 @@
   <section class="project">
     <div class="project-text">
       <h2>Chessformer <span class="venue">ICLR 2026</span></h2>
-      <p class="lead">Beat Stockfish at three TCEC chess championships.</p>
+      <p class="lead">Beat Stockfish to win three TCEC computer chess championships.</p>
       <ul class="results">
         <li>A <b>model organism for mechanistic interpretability</b>, studied by
           <a href="https://arxiv.org/abs/2406.00877">Jenner et al.</a> (NeurIPS 2024, Stuart Russell&rsquo;s group),
           <a href="https://arxiv.org/abs/2505.21552">Cruz</a> (TMLR 2025) and
           <a href="https://arxiv.org/abs/2508.21380">Sandmann et al.</a> (2025).</li>
         <li>Outperforms DeepMind&rsquo;s chess transformers with <b>30x less inference compute</b>.</li>
-        <li>A geometry-aware attention bias that matches the strength of a <b>2.5x larger model</b> at ~15% higher latency.</li>
+        <li>A geometry-aware attention mechanism that matches the strength of a <b>2.5x larger model</b> at ~15% higher latency.</li>
       </ul>
       <p class="proj-links">
         <a href="https://arxiv.org/abs/2605.19091">Paper</a>
@@ -66,7 +66,7 @@
   <section class="project">
     <div class="project-text">
       <h2>NanoGPT Speedrunning</h2>
-      <p class="lead">Two record submissions to the GPT-2 pretraining speedrun on 8&times;H100.</p>
+      <p class="lead">Two independently verified record submissions to the GPT-2 pretraining speedrun on 8&times;H100.</p>
       <ul class="results">
         <li><b>725 &rarr; 685 training steps</b> from validation-time hints drawn from all unused data shards, with 4-token context and top-5 candidate continuations.</li>
         <li><b>1.0% less wall-clock time</b> at lower loss from token normalization before n-gram embedding hashing, inspired by DeepSeek&rsquo;s Engram.</li>
@@ -78,6 +78,19 @@
     </div>
     <div class="project-media">
       <img src="imgs/ngram.svg" alt="Diagram: differently formatted n-grams normalize to one string and share one embedding slot">
+    </div>
+  </section>
+
+  <section class="project">
+    <div class="project-text">
+      <h2>Generalized Advantage Estimation for NLAs</h2>
+      <p class="lead">Generalized advantage estimation on per-token rewards for Anthropic&rsquo;s NLA reduces training-time-to-performance by 30%.</p>
+      <p class="proj-links">
+        <a href="https://github.com/daniel-monroe/natural_language_autoencoders/tree/gae">Code</a>
+      </p>
+    </div>
+    <div class="project-media">
+      <img src="imgs/nla_gae.png" alt="Held-out FVE versus RL step: GAE (lambda = 0.97) is ahead of GRPO at every evaluation">
     </div>
   </section>
 

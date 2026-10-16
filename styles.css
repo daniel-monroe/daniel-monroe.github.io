@@ -232,6 +232,7 @@ summary:hover { color: var(--head); }
 details[open] summary { margin-bottom: 12px; }
 
 /* Papers */
+.divider { border: 0; border-top: 1px solid var(--rule); margin: 40px 0 0; }
 .title-with-icon { display: flex; align-items: center; gap: 12px; }
 .title-icon { display: inline-flex; }
 .title-icon svg { width: 26px; height: 26px; }
